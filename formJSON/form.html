@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="./style.css">
+	<title>Document</title>
+
+</head>
+
+<body onload="getTableData()">
+	<div id="formSection">
+		<form onsubmit="onSubmit()" autocomplete="off" id="myForm">
+
+			<div>
+				<label id="nameField">Name:</label>
+				<input type="text" required minlength="3" id="nameId" name="Name" placeholder="Enter Name">
+			</div>
+
+			<div>
+				<label id="dateField">DOB :</label>
+				<input type="date" required id="birthDateId" name="DOB" value="dd/mm/yyyy">
+			</div>
+
+			<div>
+				<label id="genderField">Gender:</label>
+				<input type="radio" required id="male" name="gender" value="male">
+				<label for="male">Male</label>
+				<input type="radio" required id="female" name="gender" value="female">
+				<label for="female">Female</label>
+			</div>
+
+			<div>
+				<label id="skillField">Skills:</label>
+				<select id="skillsId" required multiple>
+					<option value="HTML">HTML</option>
+					<option value="CSS">CSS</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="Java">Java</option>
+				</select>
+			</div>
+
+			<div>
+				<label id="hobbyField">Hobbies:</label>
+				<input type="checkbox" id="Cricket" name="hobbies" value="Cricket">Cricket
+				<input type="checkbox" id="Tennis" name="hobbies" value="Tennis">Tennis
+			</div>
+
+			<div id="submitButtonDiv">
+				<input id="submitButtonId" type="submit" value="Add">
+			</div>
+
+		</form>
+	</div>
+
+	<div id="tableSection">
+		<table id="formTable">
+
+			<thead>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Gender</th>
+				<th>Skills</th>
+				<th>Hobbies</th>
+				<th></th>
+			</thead>
+
+			<tbody id="editTable">
+			</tbody>
+
+		</table>
+	</div>
+
+
+	<script src="./jsonScripts.js"></script>
+
+
+</body>
+
+</html>

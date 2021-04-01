@@ -1,0 +1,28 @@
+table,th, td {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+thead{
+background-color:#8ecccc ;
+}
+tbody{
+background-color: #c8ecec;
+}
+table{
+	width: 80%;
+}
+#nameId:invalid{
+	border: 2px dashed #ff0000;
+}
+form {
+	border: 1px solid #000000;
+	padding: 2px;
+	background-color: #c8ddf0;
+}
+#formSection{
+	margin: 10px;	
+}
+#tableSection{
+	margin: 10px;
+}
